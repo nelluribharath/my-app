@@ -34,5 +34,5 @@ jobs:
 
         - name: push docker image
           run: |
-          docker push my-docker-repo/my-app:${{github.sha}}
+            docker push my-docker-repo/my-app:${{github.sha}}
 
