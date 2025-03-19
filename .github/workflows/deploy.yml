@@ -13,8 +13,11 @@ jobs:
         - name: Checkout code
           uses: actions/checkout@v4
 
+        - name: Setup Docker
+          uses: docker/setup-buildx-action@v4
+
         - name: Setup docker buildx
-          uses: docker/setup-buildx-action@latest
+          uses: docker/setup-buildx-action@v4
 
         - name: Cache docker layers
           uses: actions/cache@v4
